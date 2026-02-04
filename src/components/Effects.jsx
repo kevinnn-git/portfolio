@@ -2,7 +2,7 @@ import { EffectComposer, DepthOfField, Bloom, Vignette, Noise } from '@react-thr
 
 export const Effects = () => {
     return (
-        <EffectComposer disableNormalPass>
+        <EffectComposer disableNormalPass multisampling={0}>
             <DepthOfField
                 focusDistance={0}
                 focalLength={0.02}

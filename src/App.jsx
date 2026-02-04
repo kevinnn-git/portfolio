@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <Canvas
+        dpr={[1, 2]} // Clamp pixel ratio to avoid mobile performance kill
         shadows
         // Camera initial position will be overridden by CameraRig, 
         // but setting it here sets the initial state before first frame.
